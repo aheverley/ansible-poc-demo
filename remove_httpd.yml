@@ -1,0 +1,14 @@
+---
+- name: Remove Apache Server
+  hosts: all
+
+  tasks:
+
+  - name: remove Apache packages
+    yum:
+      name: "{{ packages }}"
+      state: absent
+    vars:
+      packages:
+      - httpd
+      - httpd-tools

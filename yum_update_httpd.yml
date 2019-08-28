@@ -1,0 +1,19 @@
+---
+
+- name: update package 
+  hosts: all
+  become: true
+  tasks:
+    - name: update list of packages
+      yum:
+        name: "{{ packages }}"
+        state: latest
+      vars:
+        packages:
+        - httpd
+        - httpd-tools
+
+    - name: apache-restart
+      service:
+        name: httpd
+        state: restarted

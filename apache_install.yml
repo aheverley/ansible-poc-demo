@@ -1,0 +1,6 @@
+---
+- name: Ensure Apache installation v2.4.6-17.el7
+  hosts: all
+
+  roles:
+    - apache_install

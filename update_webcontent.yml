@@ -1,0 +1,6 @@
+---
+- name: Update Apache web content
+  hosts: all
+
+  roles:
+    - update_webcontent
