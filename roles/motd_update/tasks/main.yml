@@ -1,5 +1,6 @@
 ---
 - name: Updating the Message of the Day
-  copy:
-    src: motd.txt
+  template:
+    src: motd.j2
     dest: /etc/motd
+
