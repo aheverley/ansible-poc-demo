@@ -1,0 +1,6 @@
+---
+- name: Remove Message of the Day
+  hosts: all
+
+  roles:
+    - motd_remove
