@@ -1,0 +1,4 @@
+---
+- name: Reset the Message of the Day to blank
+  shell: echo "" > /etc/motd
+
