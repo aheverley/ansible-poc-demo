@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - motd_remove
+    - motd_blank
