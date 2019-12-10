@@ -19,5 +19,4 @@
                                                         \|__|             
                                                                        
 
-
-Hello and Welcome to the Ansible Demo!
+{{ my_motd_string }}
