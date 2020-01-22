@@ -12,3 +12,10 @@
       packages:
       - httpd
       - httpd-tools
+
+  - name: remove index.html
+    file:
+      path: /var/www/html/index.html
+      state: absent
+      force: yes
+    ignore_errors: True
