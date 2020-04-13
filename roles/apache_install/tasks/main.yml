@@ -1,7 +1,7 @@
 ---
-- name: Apache version 2.4.6-17.el7 installed
+- name: Ensure that the httpd package is installed
   yum:
-    name: httpd-2.4.6-17.el7
+    name: httpd
     state: present
   notify: apache-restart
 

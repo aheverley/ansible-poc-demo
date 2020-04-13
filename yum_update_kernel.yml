@@ -10,10 +10,9 @@
         state: latest
       vars:
         packages:
-        - httpd
-        - httpd-tools
+        - kernel
+        - kernel-modules
 
-    - name: apache-restart
-      service:
-        name: httpd
-        state: restarted
+    - name: reboot the machine
+      reboot:
+
