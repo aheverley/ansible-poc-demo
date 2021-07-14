@@ -1,8 +1,6 @@
 ---
 - name: Ensure Apache installation
   hosts: all
-
+  become: yes
   roles:
     - apache_install
-      become: yes
-      become_method: sudo
