@@ -1,7 +1,7 @@
 ---
 - name: Remove Apache Server
   hosts: all
-
+  become: yes
   tasks:
 
   - name: remove Apache packages
