@@ -2,6 +2,5 @@
 - name: Ensure Apache installation
   hosts: all
   become: yes
-  remote_user: alan
   roles:
     - apache_install
