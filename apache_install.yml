@@ -4,3 +4,5 @@
 
   roles:
     - apache_install
+      become: yes
+      become_method: sudo
