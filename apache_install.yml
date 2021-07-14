@@ -1,6 +1,6 @@
 ---
 - name: Ensure Apache installation
-  hosts: system.rza.local
+  hosts: all
 
   roles:
     - apache_install
