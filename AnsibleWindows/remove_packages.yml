@@ -1,0 +1,14 @@
+---
+- name: Install Specific versions of packages using Chocolatey
+  hosts: all
+  gather_facts: false
+  vars:
+    choco_packages:
+      - name: nodejs
+      - name: python
+  tasks:
+  - name: Remove "{{ choco_packages }}"
+    win_chocolatey:
+      name: "{{ item.name }}"
+      state: absent
+    loop: "{{ choco_packages }}"
