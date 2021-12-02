@@ -1,6 +1,5 @@
 ---
 - name: Ensure Apache installation
-  hosts: web
   become: yes
   roles:
     - apache_install
