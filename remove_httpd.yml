@@ -1,6 +1,6 @@
 ---
 - name: Remove Apache Server
-  hosts: web
+  hosts: all
   become: yes
   tasks:
 
