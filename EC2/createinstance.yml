@@ -1,0 +1,4 @@
+- hosts: windows
+  name: Creating a EC2 Instance
+  roles:
+    - aws-create-ec2

@@ -1,0 +1,4 @@
+ec2_ami_id: "{{ ec2_ami_id_choice | default('ami-0240b09539b9692a0') }}" #Access RHEL 7
+#ec2_ami_id: "{{ ec2_ami_id_choice | default('ami-02eac2c0129f6376b') }}"  #MarketPlace CentOS 7
+ec2_userdata_template_file_name: userdata_Linux.txt.j2
+wait_for_port: 22
