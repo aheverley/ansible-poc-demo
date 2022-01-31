@@ -1,0 +1,21 @@
+<powershell>
+
+{# $CompObject = [ADSI]"WinNT://$Computer"
+$NewObj = $CompObject.Create("User",ansibleadmin)
+$NewObj.SetPassword({{ ansible_password }})
+$NewObj.SetInfo()
+        
+$AdminGroup = [ADSI]"WinNT://./Administrators,group"
+$User = [ADSI]"WinNT://./ansibleadmin,user"
+$AdminGroup.Add($User.Path)
+
+
+$admin = [adsi]("WinNT://./ansibleadmin, user")
+$admin.PSBase.Invoke("SetPassword", "{{ ansible_password }}") #}
+
+net user ansibleadmin {{ ansible_password }} /add /fullname:"Ansible Administrator Account" /passwordchg:no /Y
+NET LOCALGROUP "Administrators" "ansibleadmin" /add
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Invoke-Expression ((New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1'))
+
+</powershell>
