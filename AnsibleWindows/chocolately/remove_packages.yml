@@ -1,5 +1,5 @@
 ---
-- name: Install Specific versions of packages using Chocolatey
+- name: Remove packages using Chocolatey
   hosts: all
   gather_facts: false
   vars:
