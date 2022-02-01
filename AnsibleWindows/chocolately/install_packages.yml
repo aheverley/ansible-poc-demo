@@ -5,7 +5,7 @@
   vars:
     choco_packages:
       - name: nodejs
-        version: latest
+        version: 16.13.2
       - name: python
         version: 3.6.0
   tasks:
