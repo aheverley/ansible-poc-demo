@@ -1,0 +1,7 @@
+---
+controller_projects:
+  - name: Fact Scan
+    organization: Default
+    scm_type: git
+    scm_url: 'https://github.com/aheverley/ansible-poc-demo.git'
+
