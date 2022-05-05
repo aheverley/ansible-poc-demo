@@ -1,5 +1,7 @@
 - name: Add project
   hosts: localhost
+  tasks:
+  
   - name: Project Foo
     project:
       name: "Foo"
