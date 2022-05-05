@@ -3,7 +3,7 @@
   tasks:
   
   - name: Project Foo
-    controller_projects:
+    awx.awx.job_launch:
       name: "Foo"
       description: "Foo bar project"
       organization: "test"
