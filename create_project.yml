@@ -1,8 +1,9 @@
 - name: Add project
   hosts: localhost
-  project:
-    name: "Foo"
-    description: "Foo bar project"
-    organization: "test"
-    state: present
-    controller_config_file: "~/tower_cli.cfg"
+  - name: Project Foo
+    project:
+      name: "Foo"
+      description: "Foo bar project"
+      organization: "test"
+      state: present
+      controller_config_file: "~/tower_cli.cfg"
