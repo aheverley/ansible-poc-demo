@@ -3,7 +3,7 @@
   tasks:
   
   - name: Project Foo
-    awx.awx.project:
+    tower_project:
       name: "Foo"
       description: "Foo bar project"
       organization: "test"
