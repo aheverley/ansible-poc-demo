@@ -19,3 +19,9 @@
       state: absent
       force: yes
     ignore_errors: True
+    
+  - name: firewalld permits http service
+    firewalld:
+      service: http
+      state: disabled
+      immediate: yes
