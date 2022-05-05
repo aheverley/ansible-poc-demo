@@ -3,7 +3,7 @@
   tasks:
   
   - name: Project Foo
-    project:
+    controller_projects:
       name: "Foo"
       description: "Foo bar project"
       organization: "test"
