@@ -1,0 +1,11 @@
+---
+
+- name: update package survey
+  hosts: all
+  become: true
+  tasks:
+    - name: update list of packages
+      yum:
+        name: "{{ packages }}"
+        state: latest
+ 
