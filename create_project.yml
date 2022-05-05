@@ -1,6 +1,11 @@
-- name: Add project
+---
+- name: Playbook to configure ansible controller post installation
   hosts: localhost
-  tasks:
+  connection: local
+  vars:
+    controller_validate_certs: false
+  collections:
+    - awx.awx
   
   - name: Project Foo
     controller_projects:
