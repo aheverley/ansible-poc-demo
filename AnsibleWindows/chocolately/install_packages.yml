@@ -19,7 +19,7 @@
     win_command: python --version
     register: check_python_version
 
-  - name: Check NodeJS Chrome version
+  - name: Check NodeJS version
     win_command: node --version
     register: check_node_version
 
