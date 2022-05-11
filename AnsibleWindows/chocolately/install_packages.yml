@@ -19,9 +19,9 @@
     win_command: python --version
     register: check_python_version
 
-  - name: Check nodejs version
-    win_command: node --version
-    register: check_node_version
+  - name: Check Google Chrome version
+    win_command: googlechrome --version
+    register: check_chrome_version
 
   - debug:
-      msg: Python Version is {{ check_python_version.stdout_lines[0] }} and NodeJS version is {{ check_node_version.stdout_lines[0] }}
+      msg: Python Version is {{ check_python_version.stdout_lines[0] }} and Chrome version is {{ check_chome_version.stdout_lines[0] }}
