@@ -5,9 +5,9 @@
   vars:
     choco_packages:
       - name: nodejs
-        version: latest
+        version: 16.15.0
       - name: python
-        version: latest
+        version: 3.6.0
   tasks:
   - name: Install specific versions of packages sequentially
     win_chocolatey:
