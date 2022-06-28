@@ -4,7 +4,7 @@
   tasks: 
     - name: Add exclusions in yum.conf
       blockinfile:
-        path: /etc/yum.conf
+        path: /etc/dnf/dnf.conf
         insertafter: '[main]'
         block: |
           cachedir=/var/cache/yum/$basearch/$releasever
