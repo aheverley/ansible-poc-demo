@@ -1,8 +1,8 @@
 ---
-- name: Exlude Packages in yum.conf
+- name: Exlude Packages in dnf.conf
   hosts: all
   tasks: 
-    - name: Add exclusions in yum.conf
+    - name: Add exclusions in dnf.conf
       blockinfile:
         path: /etc/dnf/dnf.conf
         insertafter: '[main]'
