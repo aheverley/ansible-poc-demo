@@ -1,6 +1,6 @@
 ---
 - name: Remove packages using Chocolatey
-  hosts: all
+  hosts: windows
   gather_facts: false
   vars:
     choco_packages:
