@@ -12,7 +12,7 @@
   - name: Install specific versions of packages sequentially
     win_chocolatey:
       name: "{{ item.name }}"
-      version: latest
+      state: latest
       #version: "{{ item.version }}"
     loop: "{{ choco_packages }}"
 
