@@ -7,7 +7,7 @@
         name: Web-Server
         state: absent
         
-      name: Remove index.html file
+    - name: Remove index.html file
       win_file:
         path: C:\Inetpub\wwwroot\index.html
         state: absent       
