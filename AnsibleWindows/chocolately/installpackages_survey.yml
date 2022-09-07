@@ -4,7 +4,7 @@
   gather_facts: false
 
   tasks:
-  - name: Install specific versions of packages sequentially
+  - name: Installing sequentially
     win_chocolatey:
       name: "{{ choco_packages }}"
       state: latest
