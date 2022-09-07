@@ -12,7 +12,8 @@
   - name: Install specific versions of packages sequentially
     win_chocolatey:
       name: "{{ item.name }}"
-      version: "{{ item.version }}"
+      version: latest
+      #version: "{{ item.version }}"
     loop: "{{ choco_packages }}"
 
   - name: Check python version
