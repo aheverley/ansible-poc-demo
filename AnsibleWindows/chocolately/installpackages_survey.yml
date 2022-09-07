@@ -1,0 +1,10 @@
+---
+- name: Install Specific Packages using Chocolatey with Survey
+  hosts: windows
+  gather_facts: false
+
+  tasks:
+  - name: Install specific versions of packages sequentially
+    win_chocolatey:
+      name: "{{ choco_packages }}"
+      state: latest
