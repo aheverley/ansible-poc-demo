@@ -1,6 +1,6 @@
 ---
 - name: Install Specific Packages using Chocolatey with Survey
-  hosts: windows
+  hosts: all
   gather_facts: false
 
   tasks:
