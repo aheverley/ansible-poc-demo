@@ -1,6 +1,6 @@
 ---
 - name: Upgrade packages using Chocolatey
-  hosts: windows
+  hosts: all
   gather_facts: false
   tasks:
   - name: Upgrade installed packages
