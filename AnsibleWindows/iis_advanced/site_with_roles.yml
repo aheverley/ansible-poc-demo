@@ -1,5 +1,5 @@
 ---
-- hosts: windows
+- hosts: all
   name: This is my role-based playbook
   roles:
     - iis_simple
