@@ -1,6 +1,6 @@
 ---
 - name: Install Specific versions of packages using Chocolatey
-  hosts: windows
+  hosts: all
   gather_facts: false
   vars:
     choco_packages:
