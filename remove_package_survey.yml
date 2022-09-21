@@ -1,0 +1,10 @@
+---
+- name: Remove Selected Package
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: Remove the package
+    yum:
+      name: "{{ package }}"
+      state: absent
