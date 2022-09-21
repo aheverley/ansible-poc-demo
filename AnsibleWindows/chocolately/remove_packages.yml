@@ -4,6 +4,7 @@
   gather_facts: false
   vars:
     choco_packages:
+      - name: git
       - name: nodejs
       - name: python
   tasks:
