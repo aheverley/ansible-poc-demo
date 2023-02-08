@@ -6,5 +6,5 @@
 
   - name: Remove the package
     yum:
-      name: "{{ package }}"
+      name: "{{ packages }}"
       state: absent
