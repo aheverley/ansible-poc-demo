@@ -1,0 +1,7 @@
+---
+- name: Register Server and use auto-subscribe to available content.
+  community.general.redhat_subscription:
+    state: present
+    username: "{{ user }}"
+    password: "{{ password }}"
+    auto_attach: true
