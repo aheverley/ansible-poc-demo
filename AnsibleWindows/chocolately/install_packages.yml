@@ -8,6 +8,7 @@
         #version: 17.9.0
       - name: python
         #version: 3.6.0
+      - name: git
   tasks:
   - name: Install specific versions of packages sequentially
     win_chocolatey:
@@ -23,6 +24,10 @@
   - name: Check NodeJS version
     win_command: node --version
     register: check_node_version
+    
+  - name: Check Git version
+    win_command: git --version
+    register: check_git_version
 
   - debug:
-      msg: Python Version is {{ check_python_version.stdout_lines[0] }} and NodeJS version is {{ check_node_version.stdout_lines[0] }}
+      msg: Python Version is {{ check_python_version.stdout_lines[0] }} and NodeJS version is {{ check_node_version.stdout_lines[0] }} and Git version is {{ check_git_version.stdout_lines[0] }}
